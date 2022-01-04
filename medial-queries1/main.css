@@ -1,60 +1,50 @@
 body {
-  background: blanchedalmond;
-  font-family: sans-serif;
-  text-align: center;
+  border-style: solid;
+  min-height: 98vh;
 }
 
 .container {
+  border-style: solid;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  min-height: 98vh
 }
 
 .a {
-  border: 1px solid lightslategray;
-  background-color: lightblue;
-  flex-grow: 5;
-  min-width: 98%;
-  min-height: 30vh;
-  margin: 1em;
+  border-style: solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 20vh;
+  min-width: 100%;
 }
 
 .b {
-  border: 1px solid lightslategray;
-  background-color: lightcoral;
-  flex-grow: 5;
-  min-height: 60vh;
-  margin-left: 1em;
-  margin-right: 1em;
+  border-style: solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  min-width: 76%;
 }
 
 .c {
-  border: 1px solid lightslategray;
-  background-color: lightgoldenrodyellow;
-  flex-grow: 1;
+  border-style: solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
   min-width: 20%;
-  min-height: 60vh;
-  margin: 1em;
 }
 
-@media (max-width: 700px) {
-  body {
-    width: 100%;
-  }
+@media (max-width: 600px) {
   .container {
     display: flex;
     flex-direction: column;
   }
-  .b {
-    flex-grow: 3;
-    min-width: 100%;
-    min-height: 60vh;
-  }
   .a, .c {
-    flex-grow: 1;
-    min-width: 100%;
-    min-height: 18vh;
+    min-height: 20vh;
   }
+
 }
